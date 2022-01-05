@@ -14,7 +14,6 @@ class ReceiveLocation(APIView):
         loc = request.data.get("address", None)
         if loc:
             data = scrapper_controller(loc)
-            print(data)
             return Response(data, status=status.HTTP_200_OK)
         else:
             return Response("Invalid data", status=status.HTTP_400_BAD_REQUEST)

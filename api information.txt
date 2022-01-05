@@ -1,4 +1,4 @@
-api url : /api/address/
+endpoint : /api/address/
 
 api data format: {
     "address":"24634 N 36th Ave, Glendale, AZ 85310"
