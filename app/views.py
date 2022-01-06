@@ -6,10 +6,19 @@ from rest_framework import status
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from .scrapper import scrapper_controller
+from rest_framework.permissions import AllowAny
+from rest_framework.response import Response
+from rest_framework.schemas import SchemaGenerator
+from rest_framework.views import APIView
+from rest_framework.generics import CreateAPIView
+
+
 # Create your views here.
 
 
-class ReceiveLocation(APIView):
+class ReceiveLocation(CreateAPIView):
+    serializer_class = LocationSerializer
+
     def post(self, request):
         loc = request.data.get("address", None)
         if loc:
@@ -17,4 +26,3 @@ class ReceiveLocation(APIView):
             return Response(data, status=status.HTTP_200_OK)
         else:
             return Response("Invalid data", status=status.HTTP_400_BAD_REQUEST)
-

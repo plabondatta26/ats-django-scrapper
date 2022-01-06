@@ -242,8 +242,9 @@ def scrapper_controller(loc):
         "market": market
     }
     file_name = str(timst) + '.json'
-    json_object = json.dumps(final_result, indent=3)
-    with open(file_name, "w") as file:
-        file.write(json_object)
+    # json_object = json.dumps(final_result, indent=3)
+    # with open(file_name, "w") as file:
+    #     file.write(json_object)
+    return final_result
 
 
