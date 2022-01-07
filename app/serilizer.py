@@ -1,6 +1,8 @@
 from rest_framework import serializers
+from .models import *
 
 
-class LocationSerializer(serializers.Serializer):
+class LocationSerializer(serializers.ModelSerializer):
     class Meta:
-        address = serializers.CharField(max_length=300, allow_blank=False, allow_null=False, help_text="24634 N 36th Ave, Glendale, AZ 85310")
+        model = LocationModel
+        fields = ["address"]
