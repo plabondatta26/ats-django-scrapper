@@ -23,7 +23,6 @@ def data_formatter(html_data, sender):
             }
         except:
             pass
-        print(html_data)
         return result
 
     elif sender == "condocerts":
@@ -106,7 +105,6 @@ def location_engineering(location):
         zip_code = zip_state[2]
         state = zip_state[1]
         location_list = [street, city, zip_code, state]
-        print(location_list)
         return location_list
     except:
-        pass
+        return 'N/A'
