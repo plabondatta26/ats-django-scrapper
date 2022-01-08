@@ -255,7 +255,7 @@ def scrapper_controller(loc):
     final_result = {}
     with Manager() as manager:
         get_result = manager.list()
-        ciranet = Process(target=ciranet_crapper, args=[loc, get_result])
+        # ciranet = Process(target=ciranet_crapper, args=[loc, get_result])
         condocert = Process(target=condocerts_scrapper, args=[loc, get_result])
         estoppel = Process(target=estoppels_scrapper, args=[loc, get_result])
         ff = Process(target=first_finder_scraper, args=[loc, get_result])
@@ -263,7 +263,7 @@ def scrapper_controller(loc):
         sentry = Process(target=sentry_crapper, args=[loc, get_result])
         market = Process(target=marketplace_community, args=[loc, get_result])
 
-        ciranet.start()
+        # ciranet.start()
         condocert.start()
         estoppel.start()
         ff.start()
@@ -271,7 +271,7 @@ def scrapper_controller(loc):
         sentry.start()
         market.start()
 
-        ciranet.join()
+        # ciranet.join()
         condocert.join()
         estoppel.join()
         ff.join()
@@ -279,10 +279,9 @@ def scrapper_controller(loc):
         sentry.join()
         market.join()
 
-        for data in range(0, 7):
+        for data in range(0, 6):
             for k, v in get_result[data].items():
                 final_result[k] = v
-    print(final_result)
     return final_result
 
 # file_name = str(timst) + '.json'
