@@ -278,10 +278,11 @@ def scrapper_controller(loc):
         homewise.join()
         sentry.join()
         market.join()
-
+        execution_time = time.perf_counter()
         for data in range(0, 6):
             for k, v in get_result[data].items():
                 final_result[k] = v
+        final_result["execution_time"] = execution_time
     return final_result
 
 # file_name = str(timst) + '.json'
