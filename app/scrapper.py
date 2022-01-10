@@ -180,7 +180,7 @@ def homewise_scrapper(location, get_result):
         get_result.append({"homewise": data})
     except:
         driver.close()
-        html_data = {"message": "Invalid Address"}
+        html_data = {"message": "No data found"}
         data = get_result.append({"homewise": html_data})
 
 
@@ -255,7 +255,7 @@ def scrapper_controller(loc):
     final_result = {}
     with Manager() as manager:
         get_result = manager.list()
-        # ciranet = Process(target=ciranet_crapper, args=[loc, get_result])
+        ciranet = Process(target=ciranet_crapper, args=[loc, get_result])
         condocert = Process(target=condocerts_scrapper, args=[loc, get_result])
         estoppel = Process(target=estoppels_scrapper, args=[loc, get_result])
         ff = Process(target=first_finder_scraper, args=[loc, get_result])
@@ -263,7 +263,7 @@ def scrapper_controller(loc):
         sentry = Process(target=sentry_crapper, args=[loc, get_result])
         market = Process(target=marketplace_community, args=[loc, get_result])
 
-        # ciranet.start()
+        ciranet.start()
         condocert.start()
         estoppel.start()
         ff.start()
@@ -271,7 +271,7 @@ def scrapper_controller(loc):
         sentry.start()
         market.start()
 
-        # ciranet.join()
+        ciranet.join()
         condocert.join()
         estoppel.join()
         ff.join()
