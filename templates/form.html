@@ -1,0 +1,150 @@
+<!DOCTYPE html> {% load static %}
+<html>
+
+<head>
+    <title>html form</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body onload="page_load()">
+    <div>
+        <div id="header">
+            <ul>
+                <li><a class="active" href="#home">Workflow</a></li>
+                <li><a href="#news">Finder</a></li>
+                <li>
+                    <a href="#contact"></a>
+                </li>
+                <li>
+                    <a href="#about"></a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="form">
+            <form action="{% url 'zillow_scrapper' %}" method="POST">
+                {%csrf_token%}
+                <label for="zilink">Zillow link Input</label><br>
+                <p id="link_error"></p>
+                <input type="text" id="zilink" name="zilink" onkeyup="link_validetor()" placeholder=>
+                <input type="submit" id="zisubmit" value="Submit">
+            </form>
+            <h4>OR</h4>
+            <form action="{% url 'zillow_address' %}">
+
+                <label for="address">Address Input </label><br>
+                <p id="addr_error"></p>
+                <input type="text" id="address" name="address" onkeyup="addr_validetor()" placeholder=>
+                <input type="submit" id="addsubmit" value="Submit">
+            </form>
+
+
+        </div>
+        <div class="new">
+            <h5>
+
+            </h5>
+            <table>
+                <tbody>
+                    {% for k, v in data.items %}
+                    <tr>
+                        {% if k == homewise %}
+                        <td>Homewise</td>
+                        <td>{{v}}</td>
+                        {% elif k =='condocerts'%}
+                        <td>Condocerts</td>
+                        <td>{{v}}</td>
+                        {% elif k =='sentry'%}
+                        <td>Sentry</td>
+                        <td>{{v}}</td>
+                        {% elif k =='first_finder'%}
+                        <td>First Finder</td>
+                        <td>{{v}}</td>
+                        {% elif k =='market'%}
+                        <td>Market</td>
+                        <td>{{v}}</td>
+                        {% elif k =='estoppels'%}
+                        <td>Estoppels</td>
+                        <td>{{v}}</td>
+                        {% elif k =='execution_time'%}
+                        <td>Execution Time</td>
+                        <td>{{v}}</td>
+                        {% endif %}
+                    </tr>
+                    {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+        function page_load() {
+            document.getElementById('zisubmit').disabled = true
+            document.getElementById('addsubmit').disabled = true
+        }
+
+        function link_validetor() {
+            var link = document.getElementById('zilink').value
+            data = link.split('.com')
+            console.log(data);
+            if (data[0] === 'https://www.zillow' || data[0] === 'http://www.zillow' || data[0] === 'http://zillow' || data[0] === 'https://zillow') {
+                document.getElementById('link_error').innerHTML = '';
+                document.getElementById('zisubmit').disabled = false;
+            } else {
+                var error_holder = document.getElementById('link_error');
+                error_holder.innerHTML = "Your address is not in the correct format";
+                error_holder.style.color = 'red';
+                document.getElementById('zisubmit').disabled = true;
+                return false
+            }
+        }
+
+        function addr_validetor() {
+            var add = document.getElementById('address').value;
+
+            var data = add.split(',');
+
+
+            if (data.length === 3) {
+                var street = data[0].trim();
+                var city = data[1];
+                var zip_code = '';
+                var zip_state = '';
+                var zip_data = data[2].trim().split(' ').trim();
+                if (zip_data.length == 2 || zip_data.length === 3) {
+                    // if (zip_data.length == 2){
+                    //     zip_state = zip_data[1];
+                    //     zip_code = zip_data[2];
+                    // }
+
+
+                    if (street.length > 0 && city.length > 0 && zip_code.length > 0 && zip_state.length > 0) {
+                        document.getElementById('addr_error').innerHTML = '';
+                        document.getElementById('addsubmit').disabled = false;
+                    } else {
+                        var error_holder = document.getElementById('addr_error');
+                        error_holder.innerHTML = "Your address is not in the correct format";
+                        error_holder.style.color = 'red';
+                        document.getElementById('addsubmit').disabled = true;
+                        return false
+                    }
+                } else {
+                    var error_holder = document.getElementById('addr_error');
+                    error_holder.innerHTML = "Your address is not in the correct format";
+                    error_holder.style.color = 'red';
+                    document.getElementById('addsubmit').disabled = true;
+                    return false
+                }
+            } else {
+                var error_holder = document.getElementById('addr_error');
+                error_holder.innerHTML = "Your address is not in the correct format";
+                error_holder.style.color = 'red';
+                document.getElementById('addsubmit').disabled = true;
+                return false
+            }
+
+        }
+    </script>
+</body>
+
+</html>

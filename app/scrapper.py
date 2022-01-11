@@ -290,3 +290,7 @@ def scrapper_controller(loc):
 # with open(file_name, "w") as file:
 #     file.write(json_object)
 # return final_result
+
+
+
+

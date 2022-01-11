@@ -1,5 +1,4 @@
 import json
-
 from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -13,6 +12,8 @@ from rest_framework.response import Response
 from rest_framework.schemas import SchemaGenerator
 from rest_framework.views import APIView
 from rest_framework.generics import CreateAPIView
+import html_to_json
+from .models import *
 
 
 # Create your views here.
@@ -25,6 +26,17 @@ class ReceiveLocation(CreateAPIView):
         loc = request.data.get("address", None)
         if loc:
             data = scrapper_controller(loc)
-            return Response(data,status=status.HTTP_200_OK)
+            obj, created = LocationModel.objects.get_or_create(address=loc)
+            if created:
+                obj.json_data = data
+                obj.save()
+            else:
+                if obj.json_data == data:
+                    pass
+                else:
+                    obj.json_data = data
+                obj.save()
+            return Response(data, status=status.HTTP_200_OK)
         else:
             return Response("Invalid data", status=status.HTTP_400_BAD_REQUEST)
+
