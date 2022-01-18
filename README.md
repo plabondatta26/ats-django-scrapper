@@ -12,7 +12,7 @@ This project is developed to scrap data from few sites. They are give here:
 This project is developed with django 3.2.11 and python version 3.7.7, selenium and beutifulsoap. 
 This project containing updated version of chrome browser which is updating from code.
 
-requirements file is included in this repository named rr.txt
+requirements file is included in this repository named requirements.txt
 
 # URLs description:
 1. http://finder.inspecthoa.com/admin <br> 
@@ -45,3 +45,28 @@ and other is
     is used to save which address is searched by an user.<br> 
   <b> 2. json_data: </b>
     is used to store the search result of each seach action. 
+
+# Get this project on your system 
+ git clone https://github.com/plabondatta26/finder-project.git
+## Installation
+
+Create a virtual environment then install the project:
+<br>
+In linux
+```bash
+$ python3 -m venv venv
+$ source venv/bin/activate
+(venv) $ pip install -r requirements.txt
+```
+In windows
+```bash
+$ virtualenv venv
+$ env/Scripts/activate
+(venv) $ pip install -r requirements.txt
+```
+# Run this project 
+```bash
+$ (venv) python manage.py makemigrations
+$ (venv) python manage.py migrate
+$ (venv) python manage.py createsuperuser
+$ (venv) python manage.py runserver
