@@ -31,15 +31,17 @@ requirements file is included in this repository named rr.txt
     "address":"8236 SW 1st St, Blue Springs, MO 64014"  <br>
    }
    
-   This "address" is required. And you need to pass the data format like: "Street, City, Zip_State, State Zip_Code".
+   This "address" is required. And you need to pass the address like: "Street, City, Zip_State, State Zip_Code".
   
 # Model 
 In This project there is a Model/ Table called 
-# LocationModel <br>
+<b>LocationModel</b> <br>
 This model is used to store data of each search opration, in this website. <br> 
-This Model/table containing 2 fields. One is # "address"
-and other is # "json_data"
-  # 1. address: <br>
-    is used to save which address is searched by an user.
-  # 2. json_data: <br> 
+This Model/table containing 2 fields. One is <b> "address" </b>
+and other is 
+<b> "json_data"</b> <br>
+# 
+  <b> 1. address:</b> 
+    is used to save which address is searched by an user.<br> 
+  <b> 2. json_data: </b>
     is used to store the search result of each seach action. 
