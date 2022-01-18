@@ -9,7 +9,7 @@ This project is developed to scrap data from few sites. They are give here:
 6. https://sentry.welcomelink.com
 7. https://marketplace.communityarchives.com
 
-This project is developed with django 3.2.10 and python version 3.7.7, selenium and beutifulsoap. 
+This project is developed with django 3.2.11 and python version 3.7.7, selenium and beutifulsoap. 
 This project containing updated version of chrome browser which is updating from code.
 
 requirements file is included in this repository named rr.txt
