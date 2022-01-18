@@ -47,7 +47,10 @@ and other is
     is used to store the search result of each seach action. 
 
 # Get this project on your system 
- git clone https://github.com/plabondatta26/finder-project.git
+```bash
+$ git clone https://github.com/plabondatta26/finder-project.git
+```
+ 
 ## Installation
 
 Create a virtual environment then install the project:
