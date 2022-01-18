@@ -27,8 +27,8 @@ requirements file is included in this repository named rr.txt
    This link will return you as much as data, application can retrive.
    
    # Data Format 
-   {
-    "address":"8236 SW 1st St, Blue Springs, MO 64014" 
+   { <br>
+    "address":"8236 SW 1st St, Blue Springs, MO 64014"  <br>
    }
    
    This "address" is required. And you need to pass the data format like: "Street, City, Zip_State, State Zip_Code".
