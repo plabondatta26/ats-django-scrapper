@@ -46,10 +46,6 @@ and other is
   <b> 2. json_data: </b>
     is used to store the search result of each seach action. 
 
-# Get this project on your system 
-```bash
-$ git clone https://github.com/plabondatta26/finder-project.git
-```
  
 ## Installation
 
