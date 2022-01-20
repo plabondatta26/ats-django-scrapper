@@ -255,49 +255,37 @@ def scrapper_controller(loc):
     global get_result
     get_result = []
     final_result = {}
-    ciranet_crapper(loc, get_result)
-    condocerts_scrapper(loc, get_result)
-    estoppels_scrapper(loc, get_result)
-    first_finder_scraper(loc, get_result)
-    homewise_scrapper(loc, get_result)
-    sentry_crapper(loc, get_result)
-    marketplace_community(loc, get_result)
-    execution_time = time.perf_counter()
-    for data in range(0, 7):
-        for k, v in get_result[data].items():
-            final_result[k] = v
-    final_result["execution_time"] = execution_time
 
-    # with Manager() as manager:
-    #     get_result = manager.list()
-    #     ciranet = Process(target=ciranet_crapper, args=[loc, get_result])
-    #     condocert = Process(target=condocerts_scrapper, args=[loc, get_result])
-    #     estoppel = Process(target=estoppels_scrapper, args=[loc, get_result])
-    #     ff = Process(target=first_finder_scraper, args=[loc, get_result])
-    #     homewise = Process(target=homewise_scrapper, args=[loc, get_result])
-    #     sentry = Process(target=sentry_crapper, args=[loc, get_result])
-    #     market = Process(target=marketplace_community, args=[loc, get_result])
-    #
-    #     ciranet.start()
-    #     condocert.start()
-    #     estoppel.start()
-    #     ff.start()
-    #     homewise.start()
-    #     sentry.start()
-    #     market.start()
-    #
-    #     ciranet.join()
-    #     condocert.join()
-    #     estoppel.join()
-    #     ff.join()
-    #     homewise.join()
-    #     sentry.join()
-    #     market.join()
-    #     execution_time = time.perf_counter()
-    #     for data in range(0, 7):
-    #         for k, v in get_result[data].items():
-    #             final_result[k] = v
-    #     final_result["execution_time"] = execution_time
+    with Manager() as manager:
+        get_result = manager.list()
+        ciranet = Process(target=ciranet_crapper, args=[loc, get_result])
+        condocert = Process(target=condocerts_scrapper, args=[loc, get_result])
+        estoppel = Process(target=estoppels_scrapper, args=[loc, get_result])
+        ff = Process(target=first_finder_scraper, args=[loc, get_result])
+        homewise = Process(target=homewise_scrapper, args=[loc, get_result])
+        sentry = Process(target=sentry_crapper, args=[loc, get_result])
+        market = Process(target=marketplace_community, args=[loc, get_result])
+
+        ciranet.start()
+        condocert.start()
+        estoppel.start()
+        ff.start()
+        homewise.start()
+        sentry.start()
+        market.start()
+
+        ciranet.join()
+        condocert.join()
+        estoppel.join()
+        ff.join()
+        homewise.join()
+        sentry.join()
+        market.join()
+        execution_time = time.perf_counter()
+        for data in range(0, 7):
+            for k, v in get_result[data].items():
+                final_result[k] = v
+        final_result["execution_time"] = execution_time
     return final_result
 
 # file_name = str(timst) + '.json'
