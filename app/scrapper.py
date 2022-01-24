@@ -1,5 +1,4 @@
 from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
 from time import sleep
 from selenium.webdriver.common.keys import Keys
 import json
@@ -16,8 +15,9 @@ password = "Opozee991!"
 
 def ciranet_crapper(location, get_result):
     html_data = None
+    # driver = webdriver.Chrome(ChromeDriverManager().install())
+    driver = webdriver.Firefox()
     try:
-        driver = webdriver.Chrome(ChromeDriverManager().install())
         url = "https://www.ciranet.com/ClosingPortal/user/login"
         url2 = "https://www.ciranet.com/ClosingPortal/newrequest"
         driver.get(url)
@@ -48,7 +48,8 @@ def ciranet_crapper(location, get_result):
 
 def condocerts_scrapper(location, get_result):
     html_data = None
-    driver = webdriver.Chrome(ChromeDriverManager().install())
+    # driver = webdriver.Chrome(ChromeDriverManager().install())
+    driver = webdriver.Firefox()
     try:
         url = "https://secure.condocerts.com/resale/"
 
@@ -88,7 +89,8 @@ def condocerts_scrapper(location, get_result):
 
 def estoppels_scrapper(location, get_result):
     html_data = None
-    driver = webdriver.Chrome(ChromeDriverManager().install())
+    # driver = webdriver.Chrome(ChromeDriverManager().install())
+    driver = webdriver.Firefox()
     try:
         url = "https://estoppels.com/"
         driver.get(url)
@@ -112,7 +114,8 @@ def estoppels_scrapper(location, get_result):
 
 
 def first_finder_scraper(location, get_result):
-    driver = webdriver.Chrome(ChromeDriverManager().install())
+    # driver = webdriver.Chrome(ChromeDriverManager().install())
+    driver = webdriver.Firefox()
     html_data = None
     try:
         url = "https://secure.welcomelink.com/resale/index.cfm?mg=KC"
@@ -149,7 +152,8 @@ def first_finder_scraper(location, get_result):
 
 
 def homewise_scrapper(location, get_result):
-    driver = webdriver.Chrome(ChromeDriverManager().install())
+    # driver = webdriver.Chrome(ChromeDriverManager().install())
+    driver = webdriver.Firefox()
     html_data = None
     try:
         url = "https://www.homewisedocs.com/login"
@@ -185,7 +189,8 @@ def homewise_scrapper(location, get_result):
 
 
 def sentry_crapper(location, get_result):
-    driver = webdriver.Chrome(ChromeDriverManager().install())
+    # driver = webdriver.Chrome(ChromeDriverManager().install())
+    driver = webdriver.Firefox()
     html_data = None
     try:
         url = "https://sentry.welcomelink.com/resale/index.cfm"
@@ -220,7 +225,8 @@ def sentry_crapper(location, get_result):
 
 
 def marketplace_community(location, get_result):
-    driver = webdriver.Chrome(ChromeDriverManager().install())
+    # driver = webdriver.Chrome(ChromeDriverManager().install())
+    driver = webdriver.Firefox()
     html_data = None
     try:
         url = "https://marketplace.communityarchives.com/login"
@@ -287,13 +293,4 @@ def scrapper_controller(loc):
                 final_result[k] = v
         final_result["execution_time"] = execution_time
     return final_result
-
-# file_name = str(timst) + '.json'
-# json_object = json.dumps(final_result, indent=3)
-# with open(file_name, "w") as file:
-#     file.write(json_object)
-# return final_result
-
-
-
 

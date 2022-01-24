@@ -1,0 +1,245 @@
+1643030847080	geckodriver	INFO	Listening on 127.0.0.1:46039
+1643030847085	geckodriver	INFO	Listening on 127.0.0.1:54273
+1643030847085	geckodriver	INFO	Listening on 127.0.0.1:44251
+1643030847090	geckodriver	INFO	Listening on 127.0.0.1:58071
+1643030847093	geckodriver	INFO	Listening on 127.0.0.1:51175
+1643030847093	geckodriver	INFO	Listening on 127.0.0.1:33697
+1643030847093	geckodriver	INFO	Listening on 127.0.0.1:34265
+1643030847585	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "39751" "-no-remote" "-profile" "/tmp/rust_mozprofileHebV3j"
+1643030847588	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "41281" "-no-remote" "-profile" "/tmp/rust_mozprofileGH6ge8"
+1643030847591	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "59837" "-no-remote" "-profile" "/tmp/rust_mozprofile2mxKvy"
+1643030847595	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "40935" "-no-remote" "-profile" "/tmp/rust_mozprofilejQOuAo"
+1643030847599	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "38087" "-no-remote" "-profile" "/tmp/rust_mozprofilerffkeg"
+1643030847599	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "50559" "-no-remote" "-profile" "/tmp/rust_mozprofileH9BwTj"
+1643030847601	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "56431" "-no-remote" "-profile" "/tmp/rust_mozprofileQ4yhvF"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1643030852649	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1643030852951	Marionette	INFO	Marionette enabled
+1643030852952	Marionette	INFO	Marionette enabled
+1643030852987	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1643030853636	Marionette	INFO	Marionette enabled
+1643030853638	Marionette	INFO	Marionette enabled
+1643030853641	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileGH6ge8/search.json.mozlz4", (void 0)))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileH9BwTj/search.json.mozlz4", (void 0)))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilerffkeg/search.json.mozlz4", (void 0)))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile2mxKvy/search.json.mozlz4", (void 0)))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileHebV3j/search.json.mozlz4", (void 0)))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileQ4yhvF/search.json.mozlz4", (void 0)))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilejQOuAo/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+DevTools listening on ws://localhost:41281/devtools/browser/eba562fa-a83f-4668-8948-713641e49751
+1643030867975	Marionette	INFO	Listening on port 44199
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+DevTools listening on ws://localhost:40935/devtools/browser/9f925543-ee11-4b26-9b69-99fe76a7d166
+1643030868090	Marionette	INFO	Listening on port 35413
+DevTools listening on ws://localhost:56431/devtools/browser/3c351df7-93b1-4a9a-8de5-c8f716956956
+DevTools listening on ws://localhost:50559/devtools/browser/b5c627bb-ec4f-4a27-8116-03882bb3fe36
+1643030868142	Marionette	INFO	Listening on port 35793
+DevTools listening on ws://localhost:38087/devtools/browser/97b21ec3-0637-4cf6-a4b9-6f5dd4106b06
+1643030868166	Marionette	INFO	Listening on port 38669
+DevTools listening on ws://localhost:39751/devtools/browser/27d71fa1-6799-4e6e-87f3-8858db40fd6f
+1643030868592	Marionette	INFO	Listening on port 38017
+1643030870564	Marionette	INFO	Listening on port 41425
+1643030870729	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:59837/devtools/browser/9abc5ddf-6258-4803-b092-8182794f443f
+1643030870891	Marionette	INFO	Listening on port 38511
+1643030870905	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1643030871216	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1643030871308	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1643030871391	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1643030871522	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1643030871764	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://marketplace.communityarchives.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.homewisedocs.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.homewisedocs.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://marketplace.communityarchives.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1643030897683	Marionette	INFO	Stopped listening on port 35793
+1643030900001	Marionette	INFO	Stopped listening on port 38511
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.ciranet.com"
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1643030903003	Marionette	INFO	Stopped listening on port 38669
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "Sqlite.jsm: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"
+1643030918872	Marionette	INFO	Stopped listening on port 41425
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x3A0078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1643031011364	Marionette	INFO	Stopped listening on port 38017
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1643031023545	Marionette	INFO	Stopped listening on port 44199
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x3A0078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1643031075026	Marionette	INFO	Stopped listening on port 35413
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1643032165322	geckodriver	INFO	Listening on 127.0.0.1:55075
+1643032165322	geckodriver	INFO	Listening on 127.0.0.1:39727
+1643032165322	geckodriver	INFO	Listening on 127.0.0.1:40913
+1643032165322	geckodriver	INFO	Listening on 127.0.0.1:46457
+1643032165322	geckodriver	INFO	Listening on 127.0.0.1:60125
+1643032165323	geckodriver	INFO	Listening on 127.0.0.1:50527
+1643032165323	geckodriver	INFO	Listening on 127.0.0.1:47389
+1643032165917	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "51247" "-no-remote" "-profile" "/tmp/rust_mozprofileYfKOTx"
+1643032165917	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "33923" "-no-remote" "-profile" "/tmp/rust_mozprofilex4lLTu"
+1643032165917	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "55289" "-no-remote" "-profile" "/tmp/rust_mozprofiley9BLqU"
+1643032165917	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "35735" "-no-remote" "-profile" "/tmp/rust_mozprofile5fhU08"
+1643032165917	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "44893" "-no-remote" "-profile" "/tmp/rust_mozprofile3s1PQo"
+1643032165917	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "42355" "-no-remote" "-profile" "/tmp/rust_mozprofilehk56LC"
+1643032165919	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "56383" "-no-remote" "-profile" "/tmp/rust_mozprofileOjbA05"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1643032173827	Marionette	INFO	Marionette enabled
+1643032173827	Marionette	INFO	Marionette enabled
+1643032173835	Marionette	INFO	Marionette enabled
+1643032173841	Marionette	INFO	Marionette enabled
+1643032173841	Marionette	INFO	Marionette enabled
+1643032173861	Marionette	INFO	Marionette enabled
+1643032173864	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileOjbA05/search.json.mozlz4", (void 0)))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile5fhU08/search.json.mozlz4", (void 0)))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilex4lLTu/search.json.mozlz4", (void 0)))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiley9BLqU/search.json.mozlz4", (void 0)))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileYfKOTx/search.json.mozlz4", (void 0)))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile3s1PQo/search.json.mozlz4", (void 0)))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilehk56LC/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51247/devtools/browser/86debf20-ed08-4227-9f32-4a37cb3cafad
+1643032182283	Marionette	INFO	Listening on port 45081
+DevTools listening on ws://localhost:35735/devtools/browser/84af60e0-e2a7-4d71-9eb6-1403e21a18bc
+DevTools listening on ws://localhost:42355/devtools/browser/242c86b3-957e-42a7-996a-bd297cacf074
+1643032182344	Marionette	INFO	Listening on port 34001
+1643032182403	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:33923/devtools/browser/5c6543d0-bf55-4043-aecb-cc6f868e821d
+1643032182414	Marionette	INFO	Listening on port 38677
+1643032182442	Marionette	INFO	Listening on port 37375
+1643032182491	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:44893/devtools/browser/c7a545aa-44be-452b-b44d-abc3e615fbb5
+1643032182593	Marionette	INFO	Listening on port 44501
+DevTools listening on ws://localhost:56383/devtools/browser/d68811ed-e39d-45c2-bbf7-fa15c2fff348
+DevTools listening on ws://localhost:55289/devtools/browser/43ab1be3-5052-4431-b2c2-9331f905c027
+1643032182705	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1643032182706	Marionette	INFO	Listening on port 41347
+1643032182713	Marionette	INFO	Listening on port 32979
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1643032182804	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1643032182993	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1643032183065	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1643032183174	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://marketplace.communityarchives.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://marketplace.communityarchives.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1643032206795	Marionette	INFO	Stopped listening on port 41347
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1643032210674	Marionette	INFO	Stopped listening on port 37375
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.homewisedocs.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.homewisedocs.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1643032230545	Marionette	INFO	Stopped listening on port 45081
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.ciranet.com"
+1643032265895	Marionette	INFO	Stopped listening on port 32979
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x3A0078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1643032309159	Marionette	INFO	Stopped listening on port 34001
+1643032313172	Marionette	INFO	Stopped listening on port 44501
+1643032315101	Marionette	INFO	Stopped listening on port 38677
